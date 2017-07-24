@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
     ss.preserve_paths = 'ZendeskSDK.framework'
     ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
     ss.resource_bundles = {
-      'ZendeskSDK' => ['ZendeskSDK.bundle/*'],
-      'ZendeskSDKStrings' => ['ZendeskSDKStrings.bundle/*']
+      'ZendeskSDK' => ['Assets/*'],
+      'ZendeskSDKStrings' => ['Strings/*']
     }
     ss.dependency 'ZendeskSDK/Providers'
   end
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
     ss.preserve_paths = 'ZendeskProviderSDK.framework'
     ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
     ss.resource_bundles = {
-      'ZendeskSDK' => ['ZendeskSDK.bundle/*']
+      'ZendeskSDK' => ['Assets/*']
     }
   end
 
