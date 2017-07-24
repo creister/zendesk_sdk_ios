@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
     ss.platform     = :ios, '8.0'
     ss.ios.vendored_frameworks = 'ZendeskSDK.framework'
     ss.preserve_paths = 'ZendeskSDK.framework'
-    ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
     ss.resource_bundles = {
       'ZendeskSDK' => ['Assets/*'],
       'ZendeskSDKStrings' => ['Strings/*']
@@ -43,7 +42,6 @@ Pod::Spec.new do |s|
     ss.platform     = :ios, '8.0'
     ss.ios.vendored_frameworks = 'ZendeskProviderSDK.framework'
     ss.preserve_paths = 'ZendeskProviderSDK.framework'
-    ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
     ss.resource_bundles = {
       'ZendeskSDK' => ['Assets/*']
     }
